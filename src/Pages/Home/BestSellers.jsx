@@ -14,7 +14,7 @@ import { Link } from "react-router-dom";
 const BestSellers = () => {
   const [products, setProducts] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/menu")
+    fetch("https://abizon.vercel.app/menu")
       .then((res) => res.json())
       .then((data) => {
         setProducts(data);

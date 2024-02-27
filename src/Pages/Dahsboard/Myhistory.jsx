@@ -22,7 +22,7 @@ const Myhistory = () => {
     // Fetch menu items from backend
     const fetchMenuItems = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/menu"); // Fetch menu items from the backend
+        const response = await axios.get("https://abizon.vercel.app/menu"); // Fetch menu items from the backend
         setMenuItems(response.data);
       } catch (error) {
         console.error("Error fetching menu items:", error);

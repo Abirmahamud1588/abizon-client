@@ -19,7 +19,7 @@ const ManageItems = () => {
       confirmButtonText: "Yes, delete it!",
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(`http://localhost:5000/menu/${item._id}`, {
+        fetch(`https://abizon.vercel.app/menu/${item._id}`, {
           // Corrected URL and method name
           method: "DELETE", // Corrected method name
         })

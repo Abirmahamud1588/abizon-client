@@ -22,7 +22,7 @@ const Card = ({ item }) => {
         email: user.email,
         quantity: 1,
       };
-      fetch("http://localhost:5000/carts", {
+      fetch("https://abizon.vercel.app/carts", {
         method: "POST",
         headers: {
           "content-type": "application/json",

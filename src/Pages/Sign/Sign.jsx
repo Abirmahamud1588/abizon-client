@@ -19,7 +19,7 @@ const Sign = () => {
       console.log(Loggeduser);
       const userSave = { email: email, name: name };
       updateuserProfile(name, photo).then(() => {
-        fetch("http://localhost:5000/users", {
+        fetch("https://abizon.vercel.app/users", {
           method: "POST",
           headers: {
             "content-type": "application/json",
